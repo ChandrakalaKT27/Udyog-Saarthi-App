@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Udyog Saarthi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <button onclick="logoutUser()">Logout</button>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Post Job</h2>
+    <form id="jobForm">
+      <input type="text" id="jobTitle" placeholder="Job Title" required>
+      <textarea id="jobDescription" placeholder="Job Description" required></textarea>
+      <input type="url" id="jobPdf" placeholder="PDF Link (optional)">
+      <input type="url" id="jobBook" placeholder="Book Link (optional)">
+      <input type="url" id="jobVideo" placeholder="Video Link (optional)">
+      <input type="url" id="jobAudio" placeholder="Audio Link (optional)">
+      <select id="jobDisability" required>
+        <option value="Any">Any Disability</option>
+        <option value="Visual">Visual</option>
+        <option value="Hearing">Hearing</option>
+        <option value="Physical">Physical</option>
+        <option value="Intellectual">Intellectual</option>
+      </select>
+      <button type="submit">Post Job</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Jobs Posted</h2>
+    <ul id="adminJobList"></ul>
+  </section>
+
+  <footer>
+    <p>Udyog Saarthi | 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

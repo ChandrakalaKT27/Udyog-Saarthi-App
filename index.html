@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>   
+  <meta charset="UTF-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>Udyog Saarthi - Job Portal</title>   
+  <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body>   
+  <header>     
+    <div class="profile-info">       
+      <span id="profileName" onclick="showProfileModal()"></span>     
+    </div>     
+    <button class="logout-btn" onclick="logoutUser()">Logout</button>      
+
+    <div class="logo-container">       
+      <img src="udyog.jpeg" alt="Udyog Saarthi Logo" class="logo">       
+      <h1>Welcome to Udyog Saarthi</h1>        
+
+      <div class="nav-links">         
+        <button onclick="window.location.href='register.html'">Register</button>         
+        <button onclick="window.location.href='login.html'">Login</button>         
+        <button onclick="goToApplications()">My Applications</button>       
+      </div>     
+    </div>   
+  </header>    
+
+  <section id="jobs">     
+    <h2>Available Jobs</h2>     
+    <ul id="jobList"></ul>   
+  </section>    
+
+  <footer>     
+    <p>Udyog Saarthi | 2025</p>   
+  </footer>    
+
+  <div id="profileModal" class="modal">     
+    <div class="modal-content">       
+      <span class="close" onclick="closeModal()">&times;</span>       
+      <div id="profileDetails"></div>       
+      <button onclick="logoutUser()">Logout</button>     
+    </div>   
+  </div>    
+
+  <script src="script.js"></script> 
+</body> 
+</html>
